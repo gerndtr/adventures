@@ -1,0 +1,12 @@
+<h1>Welcome to my adventures.</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+<p>Or just look for me on the road or in an airport.</p>
+<style>
+    body {
+        background: <%= @color %>;
+    }
+</style>
+
+<%= link_to "Red", about_path(color: "red"), class: "btn btn-danger" %>
+<%= link_to "White", about_path(color: "white"), class: "btn btn-default" %>
+<%= link_to "Blue", about_path(color: "blue"), class: "btn btn-primary" %>
